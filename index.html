@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软包电池性能与安全性测试展示</title>
+    <style>
+        /* 基础页面样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* 视频网格容器 */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* 视频之间的间距 */
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* 单个视频的容器 */
+        .video-container {
+            width: 300px; /* 每个视频容器的宽度 */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden; /* 确保视频的圆角生效 */
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        /* 视频标签样式 */
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 视频描述文字样式 */
+        .video-container p {
+            margin: 15px 0 0 0;
+            color: #555;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* 页面底部的说明文字 */
+        .footer-note {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* 响应式设计：在较小的屏幕上调整布局 */
+        @media (max-width: 1024px) {
+            .video-container {
+                width: 45%; /* 在平板上每行显示两个 */
+            }
+        }
+
+        @media (max-width: 640px) {
+            .video-container {
+                width: 90%; /* 在手机上每行显示一个 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>各向异性固态电解质软包电池安全性测试</h1>
+
+    <div class="video-grid">
+        <div class="video-container">
+            <video src="videos/1.mp4" autoplay loop muted playsinline></video>
+            <p>1. 完整的软包电池</p>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/2.mp4" autoplay loop muted playsinline></video>
+            <p>2. 正常工作（驱动风扇）</p>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/3.mp4" autoplay loop muted playsinline></video>
+            <p>3. 穿刺工具：镊子</p>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/4.mp4" autoplay loop muted playsinline></video>
+            <p>4. 对电池进行穿刺</p>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/5.mp4" autoplay loop muted playsinline></video>
+            <p>5. 展示被穿刺后的电芯</p>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/6.mp4" autoplay loop muted playsinline></video>
+            <p>6. 穿刺后仍可正常工作</p>
+        </div>
+    </div>
+
+    <p class="footer-note">所有视频将自动循环播放，以展示电池在各阶段下的状态。</p>
+
+</body>
+</html>
